@@ -1,0 +1,246 @@
+/* Google Fonts - Modern & Professional */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #1f2937;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    max-width: 960px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.3;
+}
+
+h1 {
+    color: #0f62fe;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #111827;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+#sbdInput {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#sbdInput:focus {
+    border-color: #0f62fe;
+}
+
+#searchBtn {
+    padding: 12px 24px;
+    margin-left: 10px;
+    background-color: #0f62fe;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #0c4dc6;
+}
+
+.student-info,
+.score-info,
+.group-code {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.student-info table,
+.score-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #e8f0fe;
+    color: #1e3a8a;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.score-table thead th {
+    text-align: center;
+}
+
+.score-table tbody td {
+    text-align: center;
+}
+
+.group-code p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #047857;
+    margin-top: 10px;
+}
+
+/* ========== Ảnh 2 bên ========== */
+.side-images {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.side-img {
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.left-img {
+    left: 6;
+}
+
+.right-img {
+    right: 0;
+}
+
+/* ========== Responsive adjustments for mobile ========== */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 24px 16px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 24px;
+    }
+
+    #sbdInput {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    #searchBtn {
+        width: 100%;
+        margin-left: 0;
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .student-info,
+    .score-info,
+    .group-code {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    th, td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .group-code p {
+        font-size: 16px;
+    }
+
+    .logo {
+        max-width: 140px;
+    }
+
+    .side-img {
+        display: none;
+    }
+}
