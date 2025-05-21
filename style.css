@@ -235,3 +235,13 @@ td {
         display: none;
     }
 }
+@media (max-width: 768px) {
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .score-table {
+        min-width: 600px;
+    }
+}
