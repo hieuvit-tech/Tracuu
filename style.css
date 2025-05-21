@@ -229,62 +229,65 @@ td {
     }
 
     h1 {
-        font-size: 2rem;
-        margin-bottom: 16px;
+        font-size: 1.75rem;
+        margin-bottom: 14px;
     }
 
     h2 {
-        font-size: 1.4rem;
-        margin-bottom: 12px;
+        font-size: 1.25rem;
+        margin-bottom: 10px;
     }
 
     .search-container {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     #sbdInput {
         width: 100%;
-        margin-bottom: 12px;
-        font-size: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 10px;
     }
 
     #searchBtn {
         width: 100%;
         margin-left: 0;
-        font-size: 15px;
-        padding: 12px;
+        font-size: 14px;
+        padding: 10px;
     }
 
     .student-info,
     .score-info,
     .group-code {
-        padding: 20px;
+        padding: 18px;
         border-radius: 10px;
+        margin-bottom: 20px;
     }
 
     th, td {
-        padding: 10px 12px;
-        font-size: 14px;
-    }
-
-    .group-code p {
-        font-size: 16px;
-    }
-
-    .logo {
-        max-width: 140px;
-    }
-
-    .side-img {
-        display: none;
+        padding: 8px 10px;
+        font-size: 13px;
     }
 
     .responsive-table th,
     .responsive-table td {
-        font-size: 13px;
-        padding: 10px;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .group-code p {
+        font-size: 15px;
+    }
+
+    .logo {
+        max-width: 130px;
+        margin-bottom: 8px;
+    }
+
+    .side-img {
+        display: none;
     }
 }
